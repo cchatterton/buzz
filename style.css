@@ -1,0 +1,70 @@
+/*
+
+Theme Name: Buzz
+Theme URI: http://brownbox.net.au/
+Author: Brown Box
+Author URI: http://brownbox.net.au/
+Description: WordPress theme boilerplate based on ZURB Foundation 5
+Version: 0.1 beta
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Buzz Release Notes
+=============
+0.1
+* More enphasis on native WP functions
+* Coded for performance improvments. Less repeated functions, more serialized data, introduction to transients.
+* 3 style sheets
+	1. /css/default.css
+	2. /css/style.css
+	3. /bb/style.php
+
+* Google Fonts, Zurb Font Icons and Font Awesome built in appearances/fonts
+
+New functions architecture bb/functions
+* Extended use of $args and "is_array( $args ) ? extract( $args ) : parse_str( $args );"
+* namespaced as bb_ (in leu of fx_)
+* continued enphasis on php echo line endings (i.e. '."\n";)
+* continued use of bb_e and bb_r with global ns_ namespacing
+* repeatable function patterns
+	1. extract/parse function arguments;
+	2. test for required arguments;
+	3. set defaults;
+	4. the function
+	5. return
+
+Simplified meta functions
+* faster
+* cleaner
+* more flexibility
+* more intutive
+* easier to set up and call on.
+* added wp-editor, color picker
+
+New Customizer
+* Simplified and more flexible/customiszble
+
+New Functions
+* bb_new_field for all admin fields (meta, customiser, options, etc...)
+
+
+=============
+Buzz is the sucsessor to Amelia
+Her release notess are below.
+
+1.031
+* added shortcodes to theme_part.php
+
+1.03
+* removed php libaries
+* extended fx_theme_row with fx_theme_section and fx_theme_part
+* removed toprow and herorow as theme parts
+* added front-page.php and added text to index.php and front-page.php to show that theme has installed correctly.
+
+1.02
+* Added Zurb font icons.
+
+1.01
+* Added google fonts hooks to header
+
+*/

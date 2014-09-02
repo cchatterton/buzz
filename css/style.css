@@ -1,0 +1,102 @@
+/* style.css --- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */
+
+/* media.css ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */
+
+/* orientation */
+@media only screen and (orientation: landscape) {
+
+} /* Apply styles to screens in landscape orientation */
+
+@media only screen and (orientation: portrait) {
+
+}
+/* Apply styles to screens in portrait orientation */
+
+/* custom */
+@media only screen and (max-width: 357px) {
+
+} /* ipod */
+@media only screen and (min-width: 358px) {
+
+} /* bigger than ipod */
+
+
+/* Zurb Sizes ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */
+/* Small screens */
+@media only screen {
+
+  /* small-padding */
+  .small-padding-1 {padding:1px;} .small-padding-2 {padding:2px;} .small-padding-3 {padding:3px;} .small-padding-4 {padding:4px;} .small-padding-5 {padding:5px;} .small-padding-6 {padding:6px;} .small-padding-7 {padding:7px;} .small-padding-8 {padding:8px;} .small-padding-9 {padding:9px;} .small-padding-10 {padding:10px;} .small-padding-11 {padding:11px;} .small-padding-12 {padding:12px;} .small-padding-13 {padding:13px;} .small-padding-14 {padding:14px;} .small-padding-15 {padding:15px;} .small-padding-16 {padding:16px;} .small-padding-17 {padding:17px;} .small-padding-18 {padding:18px;} .small-padding-19 {padding:19px;} .small-padding-20 {padding:20px;} .small-padding-21 {padding:21px;} .small-padding-22 {padding:22px;} .small-padding-23 {padding:23px;} .small-padding-24 {padding:24px;} .small-padding-25 {padding:25px;} .small-padding-26 {padding:26px;} .small-padding-27 {padding:27px;} .small-padding-28 {padding:28px;} .small-padding-29 {padding:29px;} .small-padding-30 {padding:30px;}
+
+  /* small 20 column grid */
+  /* based on 5% increments */
+  .small-5-percent {width:5%;} .small-10-percent {width:10%;} .small-15-percent {width:15%;} .small-20-percent {width:20%;} .small-25-percent {width:25%;} .small-30-percent {width:30%;} .small-35-percent {width:35%;} .small-40-percent {width:40%;} .small-45-percent {width:45%;} .small-50-percent {width:50%;} .small-55-percent {width:55%;} .small-60-percent {width:60%;} .small-65-percent {width:65%;} .small-70-percent {width:70%;} .small-75-percent {width:75%;} .small-80-percent {width:80%;} .small-85-percent {width:85%;} .small-90-percent {width:90%;} .small-95-percent {width:95%;} .small-100-percent {width:100%;}
+
+} /* Define mobile styles */
+@media only screen and (max-width: 40em) {
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */
+
+/* Medium screens */
+@media only screen and (min-width: 40.063em) {
+
+  #row-menu-main button.tiny, #row-menu-main .button.tiny {font-size: 0.55rem;}
+
+  /* medium-padding */
+  .medium-padding-1 {padding:1px;} .medium-padding-2 {padding:2px;} .medium-padding-3 {padding:3px;} .medium-padding-4 {padding:4px;} .medium-padding-5 {padding:5px;} .medium-padding-6 {padding:6px;} .medium-padding-7 {padding:7px;} .medium-padding-8 {padding:8px;} .medium-padding-9 {padding:9px;} .medium-padding-10 {padding:10px;} .medium-padding-11 {padding:11px;} .medium-padding-12 {padding:12px;} .medium-padding-13 {padding:13px;} .medium-padding-14 {padding:14px;} .medium-padding-15 {padding:15px;} .medium-padding-16 {padding:16px;} .medium-padding-17 {padding:17px;} .medium-padding-18 {padding:18px;} .medium-padding-19 {padding:19px;} .medium-padding-20 {padding:20px;} .medium-padding-21 {padding:21px;} .medium-padding-22 {padding:22px;} .medium-padding-23 {padding:23px;} .medium-padding-24 {padding:24px;} .medium-padding-25 {padding:25px;} .medium-padding-26 {padding:26px;} .medium-padding-27 {padding:27px;} .medium-padding-28 {padding:28px;} .medium-padding-29 {padding:29px;} .medium-padding-30 {padding:30px;}
+
+  /* medium 20 column grid */
+  /* based on 5% increments */
+  .medium-5-percent {width:5%;} .medium-10-percent {width:10%;} .medium-15-percent {width:15%;} .medium-20-percent {width:20%;} .medium-25-percent {width:25%;} .medium-30-percent {width:30%;} .medium-35-percent {width:35%;} .medium-40-percent {width:40%;} .medium-45-percent {width:45%;} .medium-50-percent {width:50%;} .medium-55-percent {width:55%;} .medium-60-percent {width:60%;} .medium-65-percent {width:65%;} .medium-70-percent {width:70%;} .medium-75-percent {width:75%;} .medium-80-percent {width:80%;} .medium-85-percent {width:85%;} .medium-90-percent {width:90%;} .medium-95-percent {width:95%;} .medium-100-percent {width:100%;}
+
+} /* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen (max-width: 64em) {
+
+} /* max-width 1024px, use when QAing tablet-only issues */
+
+/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */
+
+/* Large screens  */
+@media only screen and (min-width: 64.063em) {
+
+  /* large-padding */
+  .large-padding-1 {padding:1px;} .large-padding-2 {padding:2px;} .large-padding-3 {padding:3px;} .large-padding-4 {padding:4px;} .large-padding-5 {padding:5px;} .large-padding-6 {padding:6px;} .large-padding-7 {padding:7px;} .large-padding-8 {padding:8px;} .large-padding-9 {padding:9px;} .large-padding-10 {padding:10px;} .large-padding-11 {padding:11px;} .large-padding-12 {padding:12px;} .large-padding-13 {padding:13px;} .large-padding-14 {padding:14px;} .large-padding-15 {padding:15px;} .large-padding-16 {padding:16px;} .large-padding-17 {padding:17px;} .large-padding-18 {padding:18px;} .large-padding-19 {padding:19px;} .large-padding-20 {padding:20px;} .large-padding-21 {padding:21px;} .large-padding-22 {padding:22px;} .large-padding-23 {padding:23px;} .large-padding-24 {padding:24px;} .large-padding-25 {padding:25px;} .large-padding-26 {padding:26px;} .large-padding-27 {padding:27px;} .large-padding-28 {padding:28px;} .large-padding-29 {padding:29px;} .large-padding-30 {padding:30px;}
+
+  /* Large 20 column grid */
+  /* based on 5% increments */
+  .large-5-percent {width:5%;} .large-10-percent {width:10%;} .large-15-percent {width:15%;} .large-20-percent {width:20%;} .large-25-percent {width:25%;} .large-30-percent {width:30%;} .large-35-percent {width:35%;} .large-40-percent {width:40%;} .large-45-percent {width:45%;} .large-50-percent {width:50%;} .large-55-percent {width:55%;} .large-60-percent {width:60%;} .large-65-percent {width:65%;} .large-70-percent {width:70%;} .large-75-percent {width:75%;} .large-80-percent {width:80%;} .large-85-percent {width:85%;} .large-90-percent {width:90%;} .large-95-percent {width:95%;} .large-100-percent {width:100%;}
+
+} /* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+
+} /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (max-width: 90em) {
+
+} /* max-width 1440px, use when QAing large screen-only issues */
+
+/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */
+
+/* XLarge screens  */
+@media only screen and (min-width: 90.063em) {
+
+} /* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+
+} /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+@media only screen and (max-width: 120em) {
+
+} /* max-width 1920px, use when QAing xlarge screen-only issues */
+
+/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */
+
+/* XXLarge screens  */
+@media only screen and (min-width: 120.063em) {
+
+} /* min-width 1921px, xlarge screens */
+
+/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */
