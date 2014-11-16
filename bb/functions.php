@@ -2,6 +2,7 @@
 
 // bb_onclick( $args );
 // bb_new_field( $args );
+// bb_template_name ( $args );
 
 add_theme_support('post-thumbnails');
 
@@ -114,6 +115,36 @@ function bb_new_field( $args ){
 	echo ' </div>'."\n";
 	return $field_name;
 
+}
+
+function bb_template_name () {
+// last updated 14/11/2014
+
+	if ( is_user_logged_in() ) {
+		global $current_user;
+		get_currentuserinfo();
+		//var_dump( $current_user->user_email );
+
+		$admin = get_option('admin_email');
+		$admin = substr( $admin, strpos( $admin, '@') );
+		if( strpos( $current_user->user_email,  $admin ) != false ) {
+
+			foreach ( debug_backtrace() as $called_file ) {
+				foreach ( $called_file as $index ) {
+					if ( !is_array($index[0]) AND strstr($index[0],'/themes/') AND !strstr($index[0],'footer.php') ) {
+						$template_file = $index[0] ;
+					}
+				}
+			}
+			$template_contents = file_get_contents($template_file) ;
+			preg_match_all("(Template Name:(.*)\n)siU",$template_contents,$template_name);
+			$template_name = trim($template_name[1][0]);
+			if ( !$template_name ) $template_name = '(default)';
+			$template_file = array_pop(explode('/themes/', basename($template_file)));
+			echo '<div id="template-name">'.$template_file . ' > '. $template_name.'</div>'."\n";
+		}
+	}
+	return;
 }
 
 ?>
