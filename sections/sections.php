@@ -1,4 +1,4 @@
-<?php // last updated: 18/07/2014
+<?php // last updated: 16/11/2014
 
 function bb_section( $args ){
 
@@ -34,13 +34,15 @@ function bb_section_content( $args ){
 
   // check for required variables
   if ( !$dir ) $dir = 'sections'; // other options include 'row'
-  locate_template( array( $dir. '/' . $file ), true );
+  if ( !$require_once ) $require_once = false;
+  locate_template( array( $dir. '/' . $file ), true, $require_once );
 
 }
 
 function bb_section_end ( $args ){
 
   is_array( $args ) ? extract( $args ) : parse_str( $args );
+  if ( !$type ) $type = 'div'; // other options include ‘section’, ‘footer’, etc…
 
   _e( ' </div>'."\n", ns_ );
   _e( '</'.$type.'>'."\n", ns_ );
